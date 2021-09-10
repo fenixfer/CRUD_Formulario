@@ -10,9 +10,17 @@
 <script>
   //Llamamos al componente Navbar
   import Navbar from './components/Navbar.vue'
+  //Importamos lo localStorage lo mapeamos
+  import {mapActions} from 'vuex'
   export default {
     components: {
       Navbar
+    },
+    methods:{
+      ...mapActions(['cargarLocalStorage'])
+    },
+    created(){
+      this.cargarLocalStorage()
     }
   }
 </script>

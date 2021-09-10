@@ -2,11 +2,11 @@
     <!--Las clases son de bootstrap-->
     <div class="navbar navbar-dark bg-dark">
         <router-link to="/" class="navbar-brand">
-            Formularios
+            Formulario
         </router-link>
         <div class="d-flex">
             <router-link  class="btn btn-dark" to="/">
-                Tareas
+                Tecnología
             </router-link>
         </div>
     </div>
