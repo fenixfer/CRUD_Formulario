@@ -3,6 +3,7 @@
   <!--Para separar un poco el imput hacemos un container
   y introducimos el router (para que quede enmedio)-->
   <div class='container'>
+    <!--Esto para las vistas -->
     <router-view/>
   </div>
 </template>
