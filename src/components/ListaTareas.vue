@@ -9,7 +9,7 @@
         <th scope="col">Nombre</th>
         <th scope="col">Categorías</th>
         <th scope="col">Estado</th>
-        <th scope="col">Numero</th>
+        <th scope="col">Número</th>
         <th scope="col">Acción</th>
     </tr>
   </thead>
