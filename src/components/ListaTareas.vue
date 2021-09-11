@@ -22,21 +22,21 @@
         <th scope='row'>{{ item.id }}</th>
         <td>{{ item.nombre }}</td>
         <!--Quitamos el formato de arreglo y lo pintamos mas amigable
-        pero tenemos que recorrer en un for 
+        pero tenemos que recorrer en un for -->
         <td>
-            Necesitamos el index del array entonces ponemos cat 
+            <!--Necesitamos el index del array entonces ponemos cat -->
             <span v-for="(cat, index) in item.categorias" :key="index">
-                 Ponemos el cat es el lugar y nombre que nos trae al recorrer 
-                // {{ cat }} 
+                 <!--Ponemos el cat es el lugar y nombre que nos trae al recorrer -->
+                <!--{{ cat }} -->
                 {{
                     (item.categorias.length === index + 1) ? cat : cat + ','
                 }}
             </span>
-        </td> -->
+        </td> 
         <!-- MEJOR OCUPAMOS EL la funcón toString() QUE SEPARA LOS DATOS DEL ARREGLO POR COMAS --->
-        <!-- <td>{{item.categorias.toString()}}</td> -->
+        <!--<td>{{item.categorias.toString()}}</td> -->
         <!-- MEJOR UTILIZAMOS UN JOIN -->
-        <td> {{ item.categorias.join(', ')}}</td>
+        <!--<td> {{ item.categorias.join(', ')}}</td>-->
         <td>{{ item.estado }}</td>
         <td>{{ item.numero }}</td>
         <td>

@@ -4,7 +4,7 @@
   Editar {{$route.params.id}} - {{ tarea }} -->
   <!--El .prevent es para que no se actualice nuestra página por ahora -->
   <!--El submit recibe la tarea que modifico -->
-<form @submit="actualizarTarea(tarea)">
+<form @submit.prevent="actualizarTarea(tarea)">
   <!--Aqui recibe la tarea -->
         <Input :tarea="tarea"/>
 </form>
